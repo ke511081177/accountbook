@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <h1>Hello, World!</h1>
+
+  <h1>記帳簿</h1>
+  <form method="POST" action="{{url_for('submit')}}">
+  <div>
+    <select name = 'inout'>
+      <option>支出</option>
+      <option>收入</option>
+  </select>
+  </div>
+  <div>
+    <label>日期 : </label>
+    <input type = 'text' name="date">
+  </div>
+  <div>
+    <label>類別 : </label>
+    <input type = 'text' name="type">
+  </div>
+  <div>
+    <label>錢錢 :</label>
+    <input type = 'text' name="money">
+  </div>
+
+  <div>
+    <label>備註 :</label>
+    <textarea name="descript"
+          rows="3"
+          cols="40"
+          required> </textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit
+  </button>
+</form>
+</html>
+  <!-- <script >
+    function submit(){
+      var data={
+        'inout': document.getElementById("inout").options[ document.getElementById("inout").selectedIndex].text,
+        'data' : document.getElementById("data").innerText,
+        'money': document.getElementById("money").innerText,
+        'descript' :document.getElementById("descript").innerText
+      }
+
+    
+    }
+  </script> -->
+
