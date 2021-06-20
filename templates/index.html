@@ -1,39 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <h1>Hello, World!</h1>
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/
+>
 
+  <center>
   <h1>記帳簿</h1>
   <form method="POST" action="{{url_for('submit')}}">
-  <div>
-    <select name = 'inout'>
+
+  <table>
+    <tr>
+    <td>
+      <select name = 'inout'>
       <option>支出</option>
       <option>收入</option>
-  </select>
-  </div>
-  <div>
-    <label>日期 : </label>
+    </select>
+    <select name = 'who'>
+      <option>瑜</option>
+      <option>昌</option>
+    </select>
+  </td>
+
+</tr>
+  
+<tr>
+  <td>  
+  <label>日期 : </label>
     <input type = 'text' name="date">
-  </div>
-  <div>
+  </td>
+</tr>
+
+<tr>
+
+  <td>  
     <label>類別 : </label>
     <input type = 'text' name="type">
-  </div>
-  <div>
+  </td>
+</tr>
+<tr>
+  <td>  
     <label>錢錢 :</label>
     <input type = 'text' name="money">
-  </div>
+  </td>
+</tr>
 
-  <div>
+<tr>
+  <td>
     <label>備註 :</label>
     <textarea name="descript"
           rows="3"
           cols="40"
           required> </textarea>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit
-  </button>
+    </td>
+</tr>
+<tr>
+  <td><button type="submit" class="btn btn-primary">Submit</button></td>
+</tr>
+</table>
+</center>
 </form>
-</html>
+<!-- </html> -->
   <!-- <script >
     function submit(){
       var data={
@@ -47,3 +71,4 @@
     }
   </script> -->
 
+</meta>
