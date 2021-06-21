@@ -12,7 +12,7 @@ def hello():
     return render_template('index.html', name='temp')
 @app.route("/submit", methods=['POST'])
 def submit():
-    inout=request.values['inout']
+    
     date=request.values['date']
     type=request.values['type']
     money=request.values['money']
@@ -31,7 +31,7 @@ def submit():
     #wks = sht.worksheet_by_title("202106")
 
     #更新名稱
-    output=[ date,who,inout,type,money,descript]
+    output=[ date,who,type,money,descript]
     wks.append_table(values=output)
 
     #隱藏清單

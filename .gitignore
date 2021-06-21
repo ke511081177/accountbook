@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+temp.html
 authentic-ether-317408-d4d7f9c28d92.json
 *.py[cod]
 *$py.class
